@@ -1,0 +1,112 @@
+Preparation
+
+Install Visual Studio Code and the VSCode LiveServer extension if you haven't already done so.  Links for these installations are under Software Installation.
+
+For this lab, put all of the files you create below in the "Week 1" folder.  No need to create a separate folder for each exercise as was stated in Lab Submissions.
+
+VSCode
+
+Open the folder where you want to save your lab work.
+
+LiveServer
+The first time you use LiveServer you'll need to start it.  In VSCode, select "Command Palette" from the "View" menu.  At the prompt, type "Live Server" until you see "LiveServer: Open with LiveServer".  Select that and LiveServer should then start with opening a browser.  LiveServer will then display "Port: 5500" at the bottom of VSCode.  To close LiveServer, click on "Port: 5000".  LiveServer will then display "Go Live".  Click on "Go Live" when you want LiveServer to startup again with the HTML page you are working on.  As you work through the exercises you can click on "Go Live" at the bottom of VSCode to start a browser and view the pages you are creating as you make changes.
+
+If you are not familiar with HTML then start with the HTML Introduction (Links to an external site.) on W3Schools. 
+Exercise 1 
+
+Create an application "home page" with the following: 
+
+    Three paragraphs (use your own text or text from https://www.lipsum.com/ (Links to an external site.).
+    https://www.w3schools.com/html/html_paragraphs.asp (Links to an external site.)
+    5 Points
+
+    A main heading and a heading for each of the 3 paragraphs.
+    https://www.w3schools.com/html/html_headings.asp (Links to an external site.)
+     (Links to an external site.)5 Points
+
+    A list of links at the top of the page that link to pages you create in exercises 3 and 4 below. Include a "logoff" link that takes the user to the "login page" created in exercise 2 below.
+    https://www.w3schools.com/html/html_links.asp (Links to an external site.)
+    5 Points
+
+    An image in your Web page that is either one you create or you get from the Internet.
+    If you were building a real Web site/app you would want to make sure you could use any image you acquire from somewhere on the Internet. https://www.w3schools.com/html/html_images.asp (Links to an external site.)
+    8 Points
+
+    At least one other thing using another HTML element of your choosing.
+    8 Points
+
+Exercise 2
+
+Create an application "login page" with the following:
+https://www.w3schools.com/html/html_forms.asp (Links to an external site.)
+
+    An HTML form allowing users to enter their login name and password.  Figure out how to hide the password as it is being entered.  You can search for it on the Internet or find it in one of the other W3Schools sections of HTML forms.
+    5 Points
+
+    Include a "submit" button allowing users to "login" to your application. Don't worry about making the login button active.
+    5 Points
+
+Exercise 3 
+
+Create an "instructor page" with the following:
+https://www.w3schools.com/html/html_tables.asp (Links to an external site.)
+
+    A list of instructors in an HTML table format with the following columns:
+            First Name
+            Middle Initial
+            Last Name
+
+    Include 5 rows of data. Later this data will come from a database.
+    5 Points
+    The same menu bar you added to the "home page".
+    2 Points
+
+    A heading for the table.
+    3 Points
+
+Exercise 4 
+
+Create a "student page" with the following:
+https://www.w3schools.com/html/html_tables.asp (Links to an external site.)
+
+     (Links to an external site.)A list of students in an HTML table format with the following columns:
+
+    Student ID
+    Email Address
+
+    Include 5 rows of data. Later this data will come from a database.
+    5 Points
+
+    The same menu bar you added to the "home page".
+    2 Points
+    A heading for the table.
+    3 Points
+
+Exercise 5
+
+Create a CSS file for your application with the following:
+https://www.w3schools.com/css/default.asp (Links to an external site.)
+
+    Assign a class attribute to each of the table headings to allow you to apply the same styling to them as a group.
+    3 Points
+
+    Add 2 types of styling of your choice (font size, color, etc.) for the table headings to your application CSS file using the class name you created in step 1.
+    5 Points
+
+    Assign an Id attribute to the home page heading to allow you to apply styling only to it.
+    3 Points
+
+    Add 2 types of styling (font size, color, etc.) of your choice for the home page heading to your application CSS file using the id name you created in step 3.
+    5 Points
+
+    Add 2 types of styling (font size, color, etc.) of your choice for all paragraphs using an element selector.
+    5 Points
+
+    Add at least one other styling of your choice to some element or elements in one or more of your Web pages.
+    8 Points
+
+    Reference the application CSS file (external stylesheet) in each of your Web pages.
+    Test your pages to make sure your styles get applied as expected. https://www.w3schools.com/css/css_howto.asp (Links to an external site.)
+    10 Points
+
+When you are finished, submit your lab work following the instructions under Lab Submissions.
