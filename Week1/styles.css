@@ -1,4 +1,29 @@
+#homePageHeader {
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+}
+
+table.datatable {
+    width: 50%;
+    padding: 6px;
+    border-collapse: collapse;
+}
+th.border {
+    border: 1px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+td.border {
+    border: 1px solid black;
+    text-align: left;
+    padding: 10px;
+}
+th {
+    text-align: center;
+    padding: 10px;
+}
 td {
     text-align: left;
-    padding: 6px;
-  }
+    padding: 10px;
+}
