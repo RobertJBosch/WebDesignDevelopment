@@ -1,10 +1,10 @@
 #homePageHeader {
     font-family: 'Courier New', Courier, monospace;
-    color: blue;
+    cursor: progress;
+    color: greenyellow;
+
 }
-
-
-table.datatable {
+.datatable {
     width: 50%;
     padding: 6px;
     border-collapse: collapse;
@@ -12,6 +12,7 @@ table.datatable {
 th.border {
     border: 1px solid black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: red;
     color: green;
     text-align: center;
     padding: 10px;
@@ -29,4 +30,12 @@ td {
     text-align: left;
     padding: 10px;
 }
-
+p {
+    font-family: 'Times New Roman', Times, serif;
+    cursor: all-scroll;
+    background-color: rgb(73, 26, 204);
+    color: white;
+    padding: 4px;
+    width: 50%;
+    
+}
