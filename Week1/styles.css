@@ -3,6 +3,7 @@
     color: blue;
 }
 
+
 table.datatable {
     width: 50%;
     padding: 6px;
@@ -11,6 +12,7 @@ table.datatable {
 th.border {
     border: 1px solid black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: green;
     text-align: center;
     padding: 10px;
 }
@@ -27,3 +29,4 @@ td {
     text-align: left;
     padding: 10px;
 }
+
