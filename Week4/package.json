@@ -1,0 +1,22 @@
+{
+  "name": "week4webapp",
+  "version": "1.0.0",
+  "description": "Week 4 web application using Gulp",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-inject": "^5.0.5",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-remove-code": "^3.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Bosch",
+  "license": "ISC"
+}

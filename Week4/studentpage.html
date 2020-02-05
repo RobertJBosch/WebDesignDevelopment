@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>studentpage</title>
+<!--removeIf(production)-->
+<link rel="stylesheet" href="css/styles.css">
+<script src='js/students.js'></script>
+<!--endRemoveIf(production)-->
+<!--inject:css-->
+<!--endinject-->
+<!--inject:js-->
+<!--endinject-->
+
+</head>
+
+<body>
+
+<h1>Student Page</h1>
+
+<h3>Links</h3>
+<table class="datatable">
+<tr> <td> <a href="index.html">Home Page</a> </td> </tr>
+<tr> <td> <a href="instructorpage.html">Instructor Page</a> </td> </tr>
+<tr> <td> <a href="loginpage.html">Logout</a> </td> </tr>
+</table>
+
+<h3>Student Data</h3>
+<table id="studentTable" class="datatable">
+
+</table>
+
+<script>initializeTable()</script>
+</body>
+
+</html>
