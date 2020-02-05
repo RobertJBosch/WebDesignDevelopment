@@ -15,7 +15,7 @@ function validate() {
     return passed;    
 }
 
-function initializePage() {
+function initializeLoginPage() {
     document.getElementById('usernameerror').style.visibility='hidden';
     document.getElementById('passworderror').style.visibility='hidden';
 

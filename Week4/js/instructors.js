@@ -5,12 +5,12 @@ function getTestInstructors() {
     return JSON.parse(instructorData);
 }
 
-function initializeTable() {
+function initializeInstructorTable() {
     var data = getTestInstructors();
-    displayData(data.instructors);
+    displayInstructorData(data.instructors);
 }
 
-function displayData(instructorData) {
+function displayInstructorData(instructorData) {
     var tableData = "";
     tableData += '<tr><th class="border">First Name</th><th class="border">Middle Initial</th><th class="border">Last Name</th></tr>';
     for (i = 0; i < instructorData.length; i++) {

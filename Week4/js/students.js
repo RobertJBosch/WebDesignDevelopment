@@ -5,12 +5,12 @@ function getTestStudents() {
     return JSON.parse(studentData);
 }
 
-function initializeTable() {
+function initializeStudentTable() {
     var data = getTestStudents();
-    displayData(data.students);
+    displayStudentData(data.students);
 }
 
-function displayData(studentData) {
+function displayStudentData(studentData) {
     var tableData = "";
     tableData += '<tr><th class="border">Student ID</th><th class="border">Student Email</th></tr>';
     for (i = 0; i < studentData.length; i++) {
