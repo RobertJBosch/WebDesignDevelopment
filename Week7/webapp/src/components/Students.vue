@@ -12,8 +12,8 @@
             </thead>       
             <tbody>
                 <tr v-for="student in students" v-bind:key="student">
-                    <td class="border">{{ student.studentid }}</td>
-                    <td class="border">{{ student.emailaddress }}</td>                
+                    <td class="border">{{ student.student_id }}</td>
+                    <td class="border">{{ student.email_address }}</td>                
                 </tr>
             </tbody>
         </table>
@@ -24,26 +24,34 @@
 import Vue from 'vue';
 export default {
     name: 'Students',
-    mounted() {
-        this.students = getStudents();
-    },
-    data () {
-        return {
-            students: []
-        }
-    }
-}
-
-function getStudents() {
-    let url = `http://${this.apiServer}/api/student`;
+        
+        data () {
+            return {
+                students: [],
+                operation: 'list',
+                student_id: undefined,
+                email_address: undefined,
+                apiServer: process.env.VUE_APP_API_SERVER
+            }
+        },
+        methods: {
+            getStudents: function() {
+                let url = `http://${this.apiServer}/api/student`;
                 Vue.axios.get(url).then(
                     (response) => {
-                        return response.data;
+                        this.students = response.data;
                     },
                     (error) => {
                         console.log(error)
                     }
                 );
+            },
+    },
+
+    mounted() {
+        this.students = getStudents();
+        this.operation = 'list';
+    }
 }
   
 </script>

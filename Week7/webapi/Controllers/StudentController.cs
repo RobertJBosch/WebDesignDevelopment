@@ -19,7 +19,7 @@ namespace webapi.Controllers
         [HttpGet]
         public ActionResult<List<Students>> GetAllStudents()
         {
-            var result = _dbContext.Student.ToList();
+            var result = _dbContext.Students.ToList();
             return Ok(result);
         }
 
