@@ -11,9 +11,9 @@
                 </tr>
             </thead>       
             <tbody>
-                <tr v-for="student in students" v-bind:key="student">
-                    <td class="border">{{ student.student_id }}</td>
-                    <td class="border">{{ student.email_address }}</td>                
+                <tr v-for="student in students" v-bind:key="student.student_id">
+                    <td class="border">{{ student.studentId }}</td>
+                    <td class="border">{{ student.email }}</td>                
                 </tr>
             </tbody>
         </table>
@@ -49,7 +49,7 @@ export default {
     },
 
     mounted() {
-        this.students = getStudents();
+        this.students = this.getStudents();
         this.operation = 'list';
     }
 }
