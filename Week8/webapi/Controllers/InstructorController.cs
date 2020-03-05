@@ -25,19 +25,6 @@ namespace webapi.Controllers
             return Ok(getInstructors());
         }
 
-        // [HttpPost]
-        // public ActionResult Post([FromBody] Instructor instructor)
-        // {
-        //     instructor.FirstName = getNextFirstName();
-        //     instructor.MiddleInitial = getNextMiddleInitial();
-        //     instructor.LastName = getNextLastName();
-
-        //     InMemory.Instructors.Add(instructor);
-
-        //     return CreatedAtAction(nameof(GetByFirstName), new { firstname = instructor.FirstName, 
-        //     middleinitial = instructor.MiddleInitial, lastname = instructor.LastName }, instructor);
-        // }
-
         [HttpGet("{firstname}")]
         public ActionResult<string> GetByFirstName(string firstname)
         {
@@ -55,18 +42,6 @@ namespace webapi.Controllers
 
             return Ok(instructor);
         }
-
-        // // PUT api/values/5
-        // [HttpPut("{id}")]
-        // public void Put(int id, [FromBody] string value)
-        // {
-        // }
-
-        // // DELETE api/values/5
-        // [HttpDelete("{id}")]
-        // public void Delete(int id)
-        // {
-        // }
 
         private List<Instructor> getInstructors()
         {

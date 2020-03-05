@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 
+namespace webapi {
 public class StudentServices : IStudentServices
 {
     private readonly IStudentRepository _StudentRespository;
@@ -34,4 +35,5 @@ public class StudentServices : IStudentServices
         return StudentViewModels;
     }
 
+}
 }

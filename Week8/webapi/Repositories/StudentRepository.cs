@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using Database;
 using System;
 
+namespace webapi {
 public class StudentRepository : IStudentRepository
 {
     private readonly SchoolContext _dbContext;
@@ -29,4 +30,5 @@ public class StudentRepository : IStudentRepository
         }
     }
 
+}
 }
