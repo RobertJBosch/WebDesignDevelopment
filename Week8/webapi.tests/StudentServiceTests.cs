@@ -39,14 +39,11 @@ public class StudentServiceTests
             }
         );
 
-        // Act (When)
-        var sudentViewModels = _studentService.GetAllStudents();
-
         // Assert (NUnit Assertions) (Then)
-        Assert.That(studentViewModels.Any(student => student.Special), Is.EqualTo(true));
+        Assert.That(_studentService.GetAllStudents().Any(student => student.Special), Is.EqualTo(true));
 
         // Assert (FluentAssertions) (Then)
-        studentViewModels.Any(student => student.Special).Should().BeTrue();
+        _studentService.GetAllStudents().Any(student => student.Special).Should().BeTrue();
     }
 
     [Test]
@@ -66,14 +63,11 @@ public class StudentServiceTests
             }
         );
 
-        // Act (When)
-        var sudentViewModels = _studentService.GetAllStudents();
-
         // Assert (NUnit Assertions) (Then)
-        Assert.That(studentViewModels.Any(student => student.Special), Is.EqualTo(false));
+        Assert.That(_studentService.GetAllStudents().Any(student => student.Special), Is.EqualTo(false));
 
         // Assert (FluentAssertions) (Then)
-        studentViewModels.Any(student => student.Special).Should().BeFalse();
+        _studentService.GetAllStudents().Any(student => student.Special).Should().BeFalse();
     }
 
 }
