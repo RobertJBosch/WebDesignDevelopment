@@ -1,0 +1,4 @@
+Domain:
+robertjbosch.auth0.com
+Client ID:
+d1AL6CehGTu04jjyfORjZcbTV9maEX5J
