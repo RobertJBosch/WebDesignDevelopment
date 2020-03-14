@@ -2,6 +2,7 @@
   <div class="links">
     <div v-if="!$auth.loading">
       <span v-if="$auth.isAuthenticated" v-on:click="goToHome">Home Page</span>
+      <span v-if="$auth.isAuthenticated" v-on:click="goToExternalApi">External Api</span>
       <span v-if="$auth.isAuthenticated" v-on:click="goToStudents">Students Page</span>
       <span v-if="$auth.isAuthenticated" v-on:click="goToInstructors">Instructors Page</span>
       <!-- show login when not authenticated -->
@@ -24,6 +25,9 @@ export default {
     },
     goToInstructors: function() {
       this.$router.push({ path: "Instructors" });
+    },
+    goToExternalApi: function() {
+      this.$router.push({ path: "ExternalApi" });
     },
     login() {
       this.$auth.loginWithRedirect();

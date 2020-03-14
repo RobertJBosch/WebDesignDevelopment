@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Database;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace webapi
 {
@@ -20,19 +21,29 @@ namespace webapi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication(options =>
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        }).AddJwtBearer(options =>
+        {
+            options.Authority = "https://robertjbosch.auth0.com/";
+            options.Audience = "https://webdevwebappapi.com";
+        });
             services.AddControllers();
 
             services.AddHttpClient();
-            
+
             services.AddCors();
-            
+
             services.AddDbContext<SchoolContext>(options =>
                 options.UseNpgsql(Configuration.GetConnectionString("SchoolDatabase")));
 
             RegisterApplicationServices(services);
         }
 
-        private void RegisterApplicationServices(IServiceCollection services) {
+        private void RegisterApplicationServices(IServiceCollection services)
+        {
             services.AddScoped<IStudentRepository, StudentRepository>();
             services.AddScoped<IStudentServices, StudentServices>();
         }
@@ -44,18 +55,17 @@ namespace webapi
             {
                 app.UseDeveloperExceptionPage();
             }
-            
+
             app.UseCors(builder => builder
                 .AllowAnyOrigin()
                 .AllowAnyMethod()
                 .AllowAnyHeader()
             );
 
-            // app.UseHttpsRedirection();
-
+            app.UseHttpsRedirection();
             app.UseRouting();
-
-            // app.UseAuthorization();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

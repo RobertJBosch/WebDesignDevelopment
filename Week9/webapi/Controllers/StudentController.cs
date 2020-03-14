@@ -2,6 +2,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Database;
+using Microsoft.AspNetCore.Authorization;
 
 namespace webapi.Controllers
 {
@@ -17,6 +18,7 @@ namespace webapi.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public ActionResult<List<StudentViewModel>> GetAllStudents()
         {
             var result = _studentServices.GetAllStudents();
